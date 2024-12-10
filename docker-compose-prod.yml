@@ -1,0 +1,43 @@
+version: '3.7'
+
+services:
+  mongo:
+    build:
+      context: ./mongo
+      dockerfile: Dockerfile
+    image: mongo-server
+    container_name: my-mongo-server
+    volumes:
+      - data-volume:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: [Database Name Here]
+    ports:
+      - "27017:27017"
+    networks:
+      - linkednetwork
+
+  app:
+    build:
+      context: ./
+      dockerfile: Dockerfile.prod
+    image: app-server
+    container_name: my-app-server
+    command: npm run production
+    volumes:
+      # bind mounting entire project folder to container for watcher detection
+      - ./:/usr/app
+      # node_modules gets its own volume for all containers to share
+      - node_modules_app:/usr/app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - mongo        
+    networks:
+      - linkednetwork  
+
+volumes:
+    node_modules_app:
+    data-volume:
+
+networks:
+  linkednetwork:
