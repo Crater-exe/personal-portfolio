@@ -10,7 +10,7 @@ services:
     volumes:
       - data-volume:/data/db
     environment:
-      MONGO_INITDB_DATABASE: [Database Name Here]
+      MONGO_INITDB_DATABASE: dbProjects
     ports:
       - "27017:27017"
     networks:
