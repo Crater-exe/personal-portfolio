@@ -8,6 +8,16 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {
+        heading: "#D81159",
+        button: "#DB0071",
+        bg: "#EEECDB",
+        border: "#414141"
+      },
+      spacing: {
+        "img-w": "400px",
+        "img-h": "300px"
+      }
     },
   },
   plugins: [],
