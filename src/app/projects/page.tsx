@@ -13,7 +13,7 @@ const roboto = Roboto({
   subsets: ['latin']
 });
 
-export default function Home() {
+export default function Projects() {
 
   return (
     <div className={roboto.className}>
