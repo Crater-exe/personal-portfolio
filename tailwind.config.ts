@@ -17,7 +17,8 @@ const config: Config = {
       spacing: {
         "img-w": "400px",
         "img-h": "300px",
-        "700": "700px"
+        "700": "700px",
+        "laptop-img-w": "475px"
       }
     },
   },
