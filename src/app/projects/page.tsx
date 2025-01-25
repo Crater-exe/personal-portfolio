@@ -27,25 +27,56 @@ export default function Projects() {
         </div>
 
         <div className='flex flex-col md:flex-row'>
-          <div className='flex justify-center mb-8'>
-            <select className='text-2xl text-center w-full md:hidden h-12 rounded-lg'>
-              <option>Next.js</option>
-              <option>ASP.net</option>
-              <option>Java</option>
-              <option>Web Design</option>
-            </select>
-          </div>
-
-          <div className='hidden md:block md:mr-16 2xl:mr-24'>
-            <div className='hidden text-xl leading-5 md:flex md:flex-col md:gap-2 bg-white rounded-lg p-3'>
-              <div className={`py-2 px-3 font-semibold text-center text-white bg-button hover:bg-opacity-80 inline-block rounded-lg ${poppins.className}`}>Next.js</div>
-              <div className={`py-2 px-3 font-semibold text-center text-white bg-button hover:bg-opacity-80 inline-block rounded-lg ${poppins.className}`}>ASP.net</div>
-              <div className={`py-2 px-3 font-semibold text-center text-white bg-button hover:bg-opacity-80 inline-block rounded-lg ${poppins.className}`}>Java</div>
-              <div className={`py-2 px-3 font-semibold whitespace-nowrap text-center text-white bg-button hover:bg-opacity-80 inline-block rounded-lg ${poppins.className}`}>Web Design</div>
-            </div>
-          </div>
-
           <div className='flex-grow flex flex-col gap-16'>
+
+            <div className='p-6 bg-white rounded-lg'>
+              <div className='lg:flex lg:gap-14 xl:gap-24 place-items-center xl:text-xl'>
+                <div className='flex flex-col gap-4'>
+                  <div className={`text-4xl xl:text-5xl font-bold whitespace-nowrap text-heading flex justify-center lg:justify-start ${poppins.className}`}>Minecraft Mod</div>
+                  <div className='lg:hidden'>
+                    <div className='h-64 w-full sm:h-80 rounded-lg border-2 border-border bg-cover bg-no-repeat bg-center bg-[url("/images/minecraft-mod.png")]'></div>
+                  </div>
+                  <div className='max-w-xl 2xl:max-w-3xl leading-loose'>My friend and I developed a Minecraft Mod for our Project Management course. Although the project was less about the finished project and more about managing the project together we still put effort into creating something we are proud of. This project was a test for to see if we could put the Java skills we learned from first year into something practical with a game that we were playing at the time. The mod adds several new items to the game. I personally worked on adding a full armour set and a structure that is randomly generated through the world.</div>
+                  <div className='max-w-56'>
+                    <div className={`mb-2 text-2xl xl:text-3xl text-heading font-medium ${poppins.className}`}>Tech Stack</div>
+                    <div className='grid grid-cols-2 grid-rows-2 gap-y-2'>
+                      <div>&bull; Java</div>
+                      <div>&bull; Forge</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='hidden lg:block flex-grow'>
+                  <div className='h-40 w-60 xl:h-56 xl:w-80 2xl:h-80 2xl:w-laptop-img-w justify-self-center rounded-lg border-2 border-border bg-cover bg-no-repeat bg-center bg-[url("/images/minecraft-mod.png")]'></div>
+                </div>
+              </div>
+            </div>
+
+            <div className='p-6 bg-white rounded-lg'>
+              <div className='lg:flex lg:gap-14 xl:gap-24 place-items-center xl:text-xl'>
+                <div className='flex flex-col gap-4'>
+                  <div className={`text-4xl xl:text-5xl font-bold whitespace-nowrap text-heading flex justify-center lg:justify-start ${poppins.className}`}>ASP.net Quote Generator Admin</div>
+                  <div className='lg:hidden'>
+                    <div className='h-64 w-full sm:h-80 rounded-lg border-2 border-border bg-contain bg-no-repeat bg-center bg-[url("/images/asp-quote-admin.png")]'></div>
+                  </div>
+                  <div className='max-w-xl 2xl:max-w-3xl leading-loose'>I developed an Admin page for a Quote Generator API in ASP.net MVC. This was a project for my Web Application Programming I course. The web app has a database of quotes which can be added to or deleted from. The form included fields for an author, the quote, a link and uploading an image and when the api was hit it would send back quotes randomly picked from the database. This project helped me learn more about API&apos;s and how they are managed.</div>
+                  <div className='max-w-56'>
+                    <div className={`mb-2 text-2xl xl:text-3xl text-heading font-medium ${poppins.className}`}>Tech Stack</div>
+                    <div className='grid grid-cols-2 grid-rows-2 gap-y-2'>
+                      <div>&bull; ASP.net</div>
+                      <div>&bull; C#</div>
+                      <div>&bull; MySQL</div>
+                      <div>&bull; Bootstrap</div>
+                    </div>
+                  </div>
+                </div>
+
+                <div className='hidden lg:block flex-grow'>
+                  <div className='h-40 w-60 xl:h-56 xl:w-80 2xl:h-80 2xl:w-laptop-img-w justify-self-center rounded-lg border-2 border-border bg-contain bg-no-repeat bg-center bg-[url("/images/asp-quote-admin.png")]'></div>
+                </div>
+              </div>
+            </div>
+
             <div className='p-6 bg-white rounded-lg'>
               <div className='lg:flex lg:gap-14 xl:gap-24 place-items-center xl:text-xl'>
                 <div className='flex flex-col gap-4'>
@@ -57,10 +88,9 @@ export default function Projects() {
                   <div className='max-w-56'>
                     <div className={`mb-2 text-2xl xl:text-3xl text-heading font-medium ${poppins.className}`}>Tech Stack</div>
                     <div className='grid grid-cols-2 grid-rows-2 gap-y-2'>
-                      <div>&bull; Figma</div>
-                      <div>&bull; Tailwind</div>
                       <div>&bull; Next.js</div>
-                      <div>&bull; MongoDB</div>
+                      <div>&bull; Tailwind</div>
+                      <div>&bull; Figma</div>
                     </div>
                   </div>
                 </div>
@@ -93,13 +123,12 @@ export default function Projects() {
                   <div className='h-40 w-60 xl:h-56 xl:w-80 2xl:h-80 2xl:w-laptop-img-w justify-self-center rounded-lg border-2 border-border bg-contain bg-no-repeat bg-center bg-[url("/images/tech-roster-admin.png")]'></div>
                 </div>
               </div>
-
             </div>
           </div>
         </div>
+
         <FootBar bgColour='white' />
       </div>
     </div>
   );
-  
 }

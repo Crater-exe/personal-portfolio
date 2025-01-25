@@ -24,8 +24,7 @@ export default function NavBar() {
                 <div className='flex flex-col w-full gap-2 py-2 xl:h-16 md:items-center md:flex-row md:flex-grow md:justify-center md:gap-20 xl:gap-20'>
                 <Link href={'/'} className='font-medium bg-white rounded-md md:w-fit'>Home</Link>
                 <Link href={'/projects'} className='font-medium bg-white rounded-md md:w-fit'>Projects</Link>
-                <div className='font-medium bg-white rounded-md md:w-fit'>Resume</div>
-                <div className='font-medium bg-white rounded-md md:w-fit'>Contact</div>
+                <Link href={'/contact'} className='font-medium bg-white rounded-md md:w-fit'>Contact</Link>
             </div>
         </div>
     </div>

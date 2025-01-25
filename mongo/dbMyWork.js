@@ -1,5 +1,7 @@
 db.projects.drop();
 
+// for future use
+
 db.projects.insert([
     {
         "name": "Test",
