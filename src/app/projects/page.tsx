@@ -55,7 +55,7 @@ export default function Projects() {
             <div className='p-6 bg-white rounded-lg'>
               <div className='lg:flex lg:gap-14 xl:gap-24 place-items-center xl:text-xl'>
                 <div className='flex flex-col gap-4'>
-                  <div className={`text-4xl xl:text-5xl font-bold whitespace-nowrap text-heading flex justify-center lg:justify-start ${poppins.className}`}>ASP.net Quote Generator Admin</div>
+                  <div className={`text-4xl xl:text-5xl font-bold text-center text-heading flex justify-center lg:justify-start ${poppins.className}`}>ASP.net Quote Generator Admin</div>
                   <div className='lg:hidden'>
                     <div className='h-64 w-full sm:h-80 rounded-lg border-2 border-border bg-contain bg-no-repeat bg-center bg-[url("/images/asp-quote-admin.png")]'></div>
                   </div>
@@ -104,7 +104,7 @@ export default function Projects() {
             <div className='p-6 bg-white rounded-lg flex-grow'>
               <div className='lg:flex lg:gap-14 xl:gap-24 place-items-center xl:text-xl'>
                 <div className='flex flex-col gap-4'>
-                  <div className={`text-4xl xl:text-5xl font-bold whitespace-nowrap text-heading flex justify-center lg:justify-start ${poppins.className}`}>Tech Roster Admin</div>
+                  <div className={`text-4xl xl:text-5xl font-bold text-center text-heading flex justify-center lg:justify-start ${poppins.className}`}>Tech Roster Admin</div>
                   <div className='lg:hidden'>
                     <div className='h-64 w-full sm:h-80 justify-self-center lg:justify-self-start rounded-lg border-2 border-border bg-contain bg-no-repeat bg-center bg-[url("/images/tech-roster-admin.png")]'></div>
                   </div>
